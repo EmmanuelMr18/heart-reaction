@@ -45,7 +45,7 @@ function addStyles(heartElement, tapX, tapY, heartSize) {
   heartElement.style.height = `${heartSize}px`;
 }
 
-export function HeartReaction({ heartSize, enableRotation, canvasClassName }) {
+function HeartReaction({ heartSize, enableRotation, canvasClassName }) {
   const target = document.getElementsByClassName(canvasClassName);
   target.addEventListener("click", handleTap);
   let secondTapWaiting = false;
@@ -86,4 +86,5 @@ export function HeartReaction({ heartSize, enableRotation, canvasClassName }) {
     }, 1250);
   }
 }
+module.exports = HeartReaction
 

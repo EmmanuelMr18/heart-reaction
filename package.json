@@ -1,0 +1,26 @@
+{
+  "type":"module",
+  "name": "heart-reaction",
+  "version": "1.0.0",
+  "description": "heart reaction js script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelMr18/heart-reaction.git"
+  },
+  "keywords": [
+    "heart-reaction",
+    "tiktok",
+    "instagram",
+    "like-reaction"
+  ],
+  "author": "EmmanuelMr18",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelMr18/heart-reaction/issues"
+  },
+  "homepage": "https://github.com/EmmanuelMr18/heart-reaction#readme"
+}

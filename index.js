@@ -1,4 +1,3 @@
-const target = document.getElementById("body");
 const heartAngles = [340, 0, 20];
 
 function heartAnimation(element, rotation) {
@@ -46,11 +45,12 @@ function addStyles(heartElement, tapX, tapY, heartSize) {
   heartElement.style.height = `${heartSize}px`;
 }
 
-export function HeartReaction({ heartSize, enableRotation }) {
+export function HeartReaction({ heartSize, enableRotation, canvasClassName }) {
+  const target = document.getElementsByClassName(canvasClassName);
   target.addEventListener("click", handleTap);
   let secondTapWaiting = false;
   function handleTap(event) {
-    // In the first tap, user have 500ms to tap again and do the animation
+    // User have 500ms to tap again and continue with the animation
     if (secondTapWaiting === false) {
       secondTapWaiting = true;
       // After 500ms stop waiting for the second tap
